@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: green;
+	font-family: 'Courier New', monospace;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.terminal {
+    background-color: black;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+}
+
+.terminal-text {
+    margin: 0;
+    white-space: pre-wrap;
+    position: relative;
+    text-align: left;
+    border: none;
+    font-family: 'Courier New', monospace;
+    font-size: 25px;
+}
+
+.green {
+    color: green;
+}
+
+.white {
+    color: white;
+}
+
+.typing-text {
+    white-space: pre;
+    overflow: hidden;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    background-color: white;
+    margin-left: 2px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
